@@ -1,0 +1,34 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Enter Your Text or URL</p>
+        <input type="text" placeholder="Text or URL" id="qrText" aria-label="Text or URL input">
+        <br>
+        <label for="qrColor">Select QR Code Color:</label>
+        <input type="color" id="qrColor" value="#000000" aria-label="QR Code color picker">
+        <br>
+        <label for="bgColor">Select Background Color:</label>
+        <input type="color" id="bgColor" value="#ffffff" aria-label="Background color picker">
+        <br><br>
+        <div class="imgBox" id="imgBox">
+            <img src="" id="qrImage" alt="QR Code">
+        </div>
+        <button onclick="generateQR()">Generate QR Code</button>
+        <button onclick="downloadQR()">Download QR Code</button>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
